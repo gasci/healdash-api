@@ -1,5 +1,5 @@
 # healdash-api
 
-### Test Account:
-username: tester
+**Test Account** <br>
+username: tester <br>
 password: tester44
