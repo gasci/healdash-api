@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^admin/clearcache/', include('clearcache.urls')), # to clean cache
     path('admin/', admin.site.urls),
     path('auth/', include('auth_app.urls')),
+    path('employee/', include('employees.urls')),
     path('account/', include('accounts.urls')),
     path('', include(router.urls)),
 ]
