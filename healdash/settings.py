@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['.herokuapp.com', 'localhost', '127.0.0.1', '192.168.43.90', '1
 # Application definition
 
 INSTALLED_APPS = [
+    'clearcache',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django_email_verification',
     #apps
     'accounts',
+    'auth_app',
     #third party
     'corsheaders',
     'rest_framework_simplejwt',
@@ -148,9 +150,10 @@ MIDDLEWARE_CLASSES = (
 )
 
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(days=5),
-    'REFRESH_TOKEN_LIFETIME': timedelta(days=5),
-    'ROTATE_REFRESH_TOKENS': True,
+    # 'ACCESS_TOKEN_LIFETIME': timedelta(days=5),
+    # 'REFRESH_TOKEN_LIFETIME': timedelta(days=5),
+    # 'ROTATE_REFRESH_TOKENS': True,
+    'JWT_VERIFY_EXPIRATION': True,
 }
 
 
