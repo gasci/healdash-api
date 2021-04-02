@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'livereload',
     'django.contrib.staticfiles',
     'django_email_verification',
     #apps
@@ -49,7 +50,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'django_filters',
     'rest_framework',
-    'livereload',
     'easy_thumbnails',
     'django_cleanup'
 ]
@@ -123,7 +123,6 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-        # 'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
@@ -147,15 +146,10 @@ THUMBNAIL_ALIASES = {
     },
 }
 
-MIDDLEWARE_CLASSES = (
-    'livereload.middleware.LiveReloadScript'
-)
-
 SIMPLE_JWT = {
-    # 'ACCESS_TOKEN_LIFETIME': timedelta(days=5),
-    # 'REFRESH_TOKEN_LIFETIME': timedelta(days=5),
-    # 'ROTATE_REFRESH_TOKENS': True,
-    'JWT_VERIFY_EXPIRATION': True,
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=3650), # do not expire tokens
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=3650),  # do not expire tokens
+    'JWT_VERIFY_EXPIRATION': False,
 }
 
 
