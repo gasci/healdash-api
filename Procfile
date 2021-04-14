@@ -1,0 +1,1 @@
+web: gunicorn restapi.wsgi --timeout 10 --log-level debug
