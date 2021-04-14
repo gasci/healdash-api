@@ -1,1 +1,1 @@
-web: gunicorn restapi.wsgi --timeout 10 --log-level debug
+web: gunicorn healdash.wsgi --timeout 10 --log-level debug
