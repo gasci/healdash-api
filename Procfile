@@ -1,1 +1,1 @@
-web: gunicorn healdash.wsgi --timeout 10 --log-level debug
+web: python manage.py collectstatic --no-input; gunicorn healdash.wsgi --timeout 10 --log-level debug
