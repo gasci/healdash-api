@@ -76,7 +76,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
+                            <a class="navbar-brand" href="#">
                                 <img src="assets/images/logo.png" alt="Logo">
                             </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,16 +91,13 @@
                                         <a href="#home">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#about">About </a>
+                                        <a href="#aims">Project Aims</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#services">Services</a>
+                                        <a href="#gallery">Project Members</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#portfolio">Portfolio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#blog">Blog</a>
+                                        <a href="#blog">Events</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#contact">Contact</a>
@@ -122,46 +119,32 @@
                 <div class="row">
                     <div class="col-lg-7">
                         <div class="header-hero-content">
-                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Your</b> <span>Consultancy</span> Partner for <b>Growth.</b></h1>
-                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Phasellus vel elit efficitur, gravida libero sit amet, scelerisque  tortor arcu, commodo sit amet nulla sed.</p>
-                            <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                            <h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Knowledge Sharing in Turkish Health Forums</h1>
+                            <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Developing a decision support system to tackle the epidemic dissemination of pseudo-scientific claims.</p>
+                            {% comment %} <div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
                                 <input type="text" placeholder="username@yourdomain.com">
                                 <button class="main-btn">Sign Up</button>
-                            </div>
+                            </div> {% endcomment %}
                         </div> <!-- header hero content -->
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
-            <div class="header-hero-image d-flex align-items-center wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
-                <div class="image">
-                    <img src="assets/images/hero-image.png" alt="Hero Image">
-                </div>
-            </div> <!-- header hero image -->
         </div> <!-- header hero -->
+
+        
     </header>
     
     <!--====== HEADER PART ENDS ======-->
     
     <!--====== ABOUT PART START ======-->
     
-    <section id="about" class="about-area pt-115">
+    <section id="aims" class="about-area pt-115 pb-5">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-9">
-                    <div class="about-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <h6 class="welcome">WELCOME</h6>
-                        <h3 class="title"><span>Our 10 years working experience to </span> take care of your business goal.</h3>
-                    </div>
-                </div>
+            <div class="row align-items-center" style="width:95%;margin:auto">
+                <div style="margin-bottom:10px">Westminster Debate: “Public Health Practices in Turkey” with Gaye Usluer</div> 
+                <iframe width="100%" height="500" style="border-radius:10px;margin:auto" src="https://www.youtube.com/embed/FZ3IrrNXoM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about-image mt-60 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <img src="assets/images/about.png" alt="about">
-                    </div> <!-- about image -->
-                </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
+            {% comment %} <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="about-content pt-45">
                         <p class="text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Duis et metus et massa tempus lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum. ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.</p>
@@ -208,7 +191,7 @@
                         </div> <!-- about counter -->
                     </div> <!-- about content -->
                 </div>
-            </div> <!-- row -->
+            </div> <!-- row --> {% endcomment %}
         </div> <!-- container -->
     </section>
     
@@ -216,7 +199,7 @@
     
     <!--====== OUR SERVICE PART START ======-->
     
-    <section id="services" class="our-services-area pt-115">
+    {% comment %} <section id="services" class="our-services-area pt-115">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 col-lg-6 col-md-8 col-sm-9">
@@ -321,13 +304,13 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section> {% endcomment %}
     
     <!--====== OUR SERVICE PART ENDS ======-->
     
     <!--====== SERVICE PART START ======-->
     
-    <section id="service" class="service-area pt-105">
+    {% comment %} <section id="service" class="service-area pt-105">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-8">
@@ -397,115 +380,112 @@
                 </div> <!-- row -->
             </div> <!-- service wrapper -->
         </div> <!-- container -->
-    </section>
+    </section> {% endcomment %}
     
     <!--====== SERVICE PART ENDS ======-->
     
     <!--====== PROJECT GALLERY PART START ======-->
 
-    <section id="portfolio" class="project-masonry-area pt-115">
+    <section id="gallery" class="project-masonry-area pt-115">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-lg-4">
                     <div class="section-title pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <h6 class="sub-title">Portfolio</h6>
-                        <h4 class="title">Portfolio <span>Gallery.</span></h4>
+                        {% comment %} <h6 class="sub-title">Portfolio</h6> {% endcomment %}
+                        <h4 class="title"><span>Gallery</span></h4>
                     </div> <!-- section title -->
                 </div>
                 <div class="col-lg-8">
                     <div class="project-menu text-center text-sm-left text-lg-right pb-20">
                         <ul>
                             <li class="active" data-filter="*">See All</li>
-                            <li data-filter=".apps">Apps</li>
-                            <li data-filter=".branding">Branding</li>
-                            <li data-filter=".creative">Creative</li>
-                            <li data-filter=".laptop">Laptop</li>
-                            <li data-filter=".product">Product</li>
+                            <li data-filter=".middlesex">Middlesex University</li>
+                            <li data-filter=".british_ac">The British Academy</li>
                         </ul>
                     </div> <!-- project menu -->
                 </div>
             </div> <!-- row -->
             <div class="row grid">
-                <div class="col-lg-4 col-sm-6 grid-item apps creative laptop">
+                <div class="col-lg-4 col-sm-6 grid-item middlesex">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-1.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_3332.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-1.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_3332.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
-                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                <div class="col-lg-4 col-sm-6 grid-item middlesex">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-2.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_3345.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-2.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_3345.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
-                <div class="col-lg-4 col-sm-6 grid-item apps branding product">
+                <div class="col-lg-4 col-sm-6 grid-item middlesex">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-3.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_3357.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-3.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_3357.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
-                <div class="col-lg-4 col-sm-6 grid-item laptop product">
+                <div class="col-lg-4 col-sm-6 grid-item middlesex">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-5.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_3371.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-5.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_3371.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
-                <div class="col-lg-4 col-sm-6 grid-item branding creative">
+                <div class="col-lg-4 col-sm-6 grid-item british_ac">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-4.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_3424.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-4.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_3424.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
-                <div class="col-lg-4 col-sm-6 grid-item apps laptop product">
+                <div class="col-lg-4 col-sm-6 grid-item british_ac">
                     <div class="single-gallery gallery-masonry mt-30">
                         <div class="gallery-image">
-                            <img src="assets/images/protfolio-6.jpg" alt="protfolio">
+                            <img src="{% static "landing/assets/photos/IMG_1.JPG" %}" alt="gallery">
                         </div>
                         <div class="gallery-icon">
-                            <a class="image-popup" href="assets/images/protfolio-6.jpg">
+                            <a class="image-popup" href="{% static "landing/assets/photos/IMG_1.JPG" %}">
                                 <span></span>
                             </a>
                         </div>
                     </div> <!-- single gallery -->
                 </div>
             </div> <!-- row -->
-            <div class="row">
+            {% comment %} <div class="row">
                 <div class="col-lg-12">
                     <div class="gallery-btn mt-60 text-center">
                         <a class="main-btn" href="#">Load More</a>
                     </div>
                 </div>
-            </div> <!-- row -->
+            </div> <!-- row --> {% endcomment %}
         </div> <!-- container -->
     </section>
 
@@ -513,7 +493,7 @@
     
     <!--====== PRICING PART START ======-->
     
-    <section data-scroll-index="0" id="pricing" class="pricing-area pt-115">
+    {% comment %} <section data-scroll-index="0" id="pricing" class="pricing-area pt-115">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-8 col-sm-9">
@@ -592,13 +572,13 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section> {% endcomment %}
     
     <!--====== PRICING PART ENDS ======-->
     
     <!--====== TESTIMONIAL PART START ======-->
     
-    <section id="testimonial" class="testimonial-area pt-70 pb-120">
+    {% comment %} <section id="testimonial" class="testimonial-area pt-70 pb-120">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-xl-5 col-lg-6">
@@ -705,13 +685,13 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section> {% endcomment %}
     
     <!--====== TESTIMONIAL PART ENDS ======-->
     
     <!--====== BRAND PART START ======-->
     
-    <div id="brand" class="brand-area">
+    {% comment %} <div id="brand" class="brand-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -735,13 +715,13 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </div>
+    </div> {% endcomment %}
     
     <!--====== BRAND PART ENDS ======-->
     
     <!--====== BLOG PART START ======-->
 
-    <section id="blog" class="blog-area pt-115">
+    {% comment %} <section id="blog" class="blog-area pt-115">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4">
@@ -811,7 +791,7 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section>
+    </section> {% endcomment %}
 
     <!--====== BLOG PART ENDS ======-->
     
@@ -835,7 +815,7 @@
                                 <i class="lni-map-marker"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">21 King Street, Melbourne <br> Victoria, 1202 Australia.</p>
+                                <p class="text">Address.</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -845,8 +825,8 @@
                                 <i class="lni-envelope"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">hello@uideck.com</p>
-                                <p class="text">support@uideck.com</p>
+                                <p class="text">hello@healdash.com</p>
+                                <p class="text">support@healdash.com</p>
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -856,8 +836,8 @@
                                 <i class="lni-phone"></i>
                             </div>
                             <div class="contact-info-content media-body">
-                                <p class="text">+99 000 1111 555</p>
-                                <p class="text">+88 999 5555 444</p>
+                                <p class="text">Telephone</p>
+                                {% comment %} <p class="text">+88 999 5555 444</p> {% endcomment %}
                             </div>
                         </div> <!-- single contact info -->
                     </div>
@@ -924,10 +904,7 @@
                                 <h5 class="title">Services</h5>
                             </div>
                             <ul>
-                                <li><a href="#">Business Consultancy</a></li>
-                                <li><a href="#">Digital Marketing</a></li>
-                                <li><a href="#">Market Analysis</a></li>
-                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Links</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -950,10 +927,9 @@
                                 <h5 class="title">Contact Info</h5>
                             </div>
                             <div class="contact pt-10">
-                                <p class="text">21 King Street, Melbourne <br>
-                                    Victoria, 1202 Australia.</p>
-                                <p class="text">support@uideck.com</p>
-                                <p class="text">+99 000 555 66 22</p>
+                                <p class="text">Address.</p>
+                                <p class="text">support@healdash.com</p>
+                                <p class="text">Telephone</p>
 
                                 <ul class="social mt-40">
                                     <li><a href="#"><i class="lni-facebook"></i></a></li>
