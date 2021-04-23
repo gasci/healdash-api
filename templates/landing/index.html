@@ -36,7 +36,35 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="{% static "landing/assets/css/style.css" %}">
-    
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <style>
+        
+        @media (max-width: 768px) {
+            .card-columns {
+                column-count: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .card-columns {
+                column-count: 2;
+            }
+        }
+        /* Large devices (desktops, 992px and up) */
+        
+        @media (min-width: 992px) {
+            .card-columns {
+                column-count: 2;
+            }
+        }
+        /* Extra large devices (large desktops, 1200px and up) */
+        
+        @media (min-width: 1200px) {
+            .card-columns {
+                column-count: 3;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -68,7 +96,7 @@
                                         <a href="#aims">Project Aims</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="#gallery">Project Members</a>
+                                        <a href="#members">Project Members</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#gallery">Events</a>
@@ -129,7 +157,90 @@
         </div> <!-- container -->
     </section>
     
+    
     <!--====== ABOUT PART ENDS ======-->
+
+
+      <section id="members" class="about-area pt-115 pb-5">
+        <div class="container">
+        <div class="section-title pb-20  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+                        {% comment %} <h6 class="sub-title">Portfolio</h6> {% endcomment %}
+                        <h4 class="title"><span>Project Members</span></h4>
+                    </div> <!-- section title -->
+           <div class="card-columns ">
+                <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/emek_usenmez.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Assoc. Prof. Emek Usenmez</h4>
+                        <p class="card-text">
+                        Dr. Usenmez graduated from the Turkish Language and Literature Department of Konya Selçuk University in 2004. He obtained his Masters (University of Dumlupinar) in 2004 and his PhD (University of Istanbul) in 2010, respectively. Dr. Üşenmez is currently an Associate Professor of Turkish Language at Istanbul University Language Centre. He is interested in The Old Anatolian Turkish (as part of Western-Oghuz Turkic), Ottoman Turkish and contemporary Turkish dialects such as Uzbek-Turkmen & Crimean Tatar, and in teaching Turkish as a foreign language for foreigners. His academic work has published in top journals such as Turkish Studies. He was invited twice to Harvard University as a visiting academic. Following that, he was invited by Cambridge University as a visiting fellow. On top of his academic career, Dr. Usenmez served as the Educational Counsellor of Turkish Embassy in London from 2016 to 2017.
+                        </p>
+                    </div>
+                </div>
+                <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/soydan_soylu.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Dr. Soydan Soylu</h4>
+                        <p class="card-text">
+                        Dr. Soylu is a Senior Lecturer in Organisational Psychology and the Leader of Science and Technology Communication Research Cluster at Middlesex University Business School. He completed his MSc and PhD at the London School of Economics (LSE), Department of Psychological and Behavioural Science. Prior to joining Middlesex University, Dr. Soylu was a visiting fellow at Harvard University, Department of Psychology, and he worked at the LSE, Department of Management from 2011 to 2013 as a Post-Doctoral Research Fellow. His research interests include the dark side of behaviours at work, open social innovation, intergroup relations, and the determinants of societal inequality. Dr. Soydan Soylu was a key partner in the "Get together without barriers" project, funded by the JPI-Urban Europe and TÜBITAK (€200K), a Turkey-Austria joint project, to accomplish the conceptualization of an online job matching platform for overqualified but socially disadvantaged groups. Dr. Soylu acted as the Principal Investigator for the Institutional Links project funded by the British Council (£87K) to create an Open social innovation platform system design for encouraging young education volunteers to put their creative ideas in science teaching, involving action research. Dr. Soylu's work has published in top journals in the field of management such as Human Relations and Journal of Business Ethics.
+                        </p>
+                    </div>
+                </div>
+                <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/nuran_dogruer.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Dr. Fatma Nuran Dogruer</h4>
+                        <p class="card-text">
+                        Dr. Fatma Nuran Dogruer is a faculty member at Department of Health Management, Istanbul Bilgi University. Dr. Dogruer is a medical doctor (ENT specialist). She served as the Vice Director at Vocational School of Health Services (2019-2021) and Deputy Dean of Faculty of Health Sciences (2017-2019) at Istanbul Bilgi University.
+                        </p>
+                    </div>
+                </div>
+                <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/satkeer_azizzadeh.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Dr. Satkeen Azizzadeh</h4>
+                        <p class="card-text">
+                        Dr. Azizzadeh is a Lecturer in Human Resources at Middlesex University. She obtained her PhD in Organisational and Social Psychology from London School of Economics and Political Science in 2015. Prior to her doctoral studies, Satkeen earned an MSc in Organisational and Social Psychology from LSE and an MBA from McGill University, Canada. Satkeen is an experienced action researcher, with years of involvement in various industries, including finance and insurance as her research explores the micro-dynamics of organisational change and development from an organisational and cultural psychology point of view. She is particularly interested in the implementation of organisational change programs using various qualitative research methods. Through a three-year longitudinal qualitative study, Satkeen’s PhD used the workforce nationalization programs in the Middles East as a case study to explore how positive discrimination policies are developed and implemented and their impact on employees’ identities as well as on organizational cultural and working practices.
+                        </p>
+                    </div>
+                </div>
+                <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/gaye_usluer.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Prof. Gaye Usluer</h4>
+                        <p class="card-text">
+                        Professor Gaye Usluer is an academic and former member of Turkish Parliament for Eskisehir with the opposition Republican People’s Party. She served as a member of the Turkish parliament’s education committee. Having graduated from the Faculty of Medicine at the Hacettepe University, she became a professor in 1998. She is currently the Head of the Division of Infectious Diseases at the Faculty of Medicine in Eskisehir Osmangazi University, and a member of the Party Assembly of Republican People’s Party. Prof. Usluer was a visiting professor in Oxford John Raddclif Hospital in 1996, a Management Committee Member of the Society for Infectious Diseases and Clinical Microbiology Specialty in 2006 and she is currently an honorary board member at the Eskisehir Medical Association.
+                        </p>
+                    </div>
+                </div>
+                 <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/ali_demirci.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Prof. Ali Demirci</h4>
+                        <p class="card-text">
+                        Prof. Demirci is graduated from Hacettepe Medical School. He is a Professor at Bilgi University Faculty of Health Sciences. He had administrative duties including dean of Medical School, vice rector, founder and chief of radiology department, coordinator of university hospital construction, head of university rolling budget, and head of university research fund. He led several collaborative projects related to health communication and management. 
+                        </p>
+                    </div>
+                </div>
+                 <div class="card ">
+                 <img class="card-img-top pt-5 pl-5 pr-5 pb-2" src="https://mealdoc-2.s3.eu-west-1.amazonaws.com/other/members/yasemin_aydogmus.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Dr. Yasemin Aydoğmuş</h4>
+                        <p class="card-text">
+                        Dr. Yasemin Aydoğmuş is an Assistant Professor at the Faculty of Law, Istanbul University since 2018. She obtained her undergraduate degree in law from Koç University and completed her graduate degrees (LLM and PhD) in Istanbul University. She is currently working on data privacy and protection of health data, and private international law.
+                        </p>
+                    </div>
+                </div>
+                
+           </div>
+        </div> <!-- container -->
+    </section>
+    
+    
+    <!--====== ABOUT PART ENDS ======-->
+
+
+
     
     <!--====== PROJECT GALLERY PART START ======-->
 
@@ -289,17 +400,17 @@
                     </div>
                 </div> <!-- row -->
             </div> <!-- contact info -->
-            <div class="row">
+            {% comment %} <div class="row">
                 <div class="col-lg-12">
                     <div class="contact-wrapper-form pt-115  wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h4 class="contact-title pb-10"><i class="lni-envelope"></i> Leave <span>A Message.</span></h4>
                         
-                        <form id="contact-form" action="assets/contact.php" method="post">
+                        
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="contact-form mt-45">
                                         <label>Enter Your Name</label>
-                                        <input type="text" name="name" placeholder="Full Name">
+                                        <input type="text" name="subject" placeholder="Full Name">
                                     </div> <!-- contact-form -->
                                 </div>
                                 <div class="col-md-6">
@@ -311,20 +422,20 @@
                                 <div class="col-md-12">
                                     <div class="contact-form mt-45">
                                         <label>Your Message</label>
-                                        <textarea name="message" placeholder="Enter your message..."></textarea>
+                                        <textarea name="body" placeholder="Enter your message..."></textarea>
                                     </div> <!-- contact-form -->
                                 </div>
                                 <p class="form-message"></p>
                                 <div class="col-md-12">
                                     <div class="contact-form mt-45">
-                                        <button type="submit" class="main-btn">Send Now</button>
+                                        <button target="_blank" class="main-btn" onclick="location.href='mailto:?subject=Interesting information&body=I thought you might find this information interesting: ';">Send Now</button>
                                     </div> <!-- contact-form -->
                                 </div>
                             </div> <!-- row -->
-                        </form>
+                        
                     </div> <!-- contact wrapper form -->
                 </div>
-            </div> <!-- row -->
+            </div> <!-- row --> {% endcomment %}
         </div> <!-- container -->
     </section>
 
